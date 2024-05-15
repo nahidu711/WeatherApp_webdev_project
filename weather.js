@@ -4,7 +4,7 @@ const apiurl="https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 async function checkwether(cname){
     console.log(cname);
     let respons= await fetch(apiurl +cname+ `&appid=${apikey}`);
-    if(respons.status==404){
+    if(respons.status==404 || respons.status==400){
      document.querySelector(".invalid").style.display="block";
      document.querySelector(".wether").style.display="none";
     }
@@ -21,16 +21,13 @@ async function checkwether(cname){
     document.querySelector(".wind").innerHTML=data.wind.speed + "km/h";
 
    if(data.weather[0].main=="Clear" || data.weather[0].main=="Clouds" || data.weather[0].main=="Drizzle"
-    || data.weather[0].main=="Mist" || data.weather[0].main=="Rain" || data.weather[0].main=="Snow" ) 
+    || data.weather[0].main=="Mist" || data.weather[0].main=="Rain" || data.weather[0].main=="Snow"  || data.weather[0].main=="Haze") 
     
   {
   
     document.querySelector(".weatherIcon").src="images/"+data.weather[0].main+".png";
   }
-else if(data.weather[0].main=="Haze")
-    {
-        document.querySelector(".weatherIcon").src="images/Mist.png"; 
-    }
+  
   else
   {
 
