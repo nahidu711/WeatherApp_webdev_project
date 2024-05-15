@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false" id="cityname">
+            <button id="mybutton"><img src="images/search.png" alt="Search"></button>
+        </div>
+         <div class="invalid">
+            <p>Invalid City Name</p>
+         </div>
+        <div class="wether">
+            <img src="images/rain.png" class="weatherIcon">
+            <h1 class="temp">25°c</h1>
+            <h2 class="city">New York</h2>
+
+            <div class="details">
+
+                <div class="co1">
+                    <img src="images/humidity.png">
+                    <div >
+                        <p class="humidity"> 50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="co2">
+                    <img src="images/wind.png">
+                    <div >
+                        <p class="wind"> 15kph</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+   
+
+    </div>
+
+
+
+    <script src="weather.js"></script>
+</body>
+</html>

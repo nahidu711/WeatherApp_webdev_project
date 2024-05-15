@@ -1,0 +1,134 @@
+*{
+    font-family: Arial,sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    max-height: 700px;
+    background: linear-gradient(rgb(8, 170, 245),rgb(100, 184, 240),rgb(165, 209, 226));
+    margin:100px auto 0px;
+    padding: 40px 35px;
+    border: none;
+    border-radius:10px;
+    color:white;
+}
+.search{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    
+
+   
+}
+.search input{
+    border:0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    width: 80%;
+}
+.search button{
+    border:0;
+    outline:0;
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+    cursor:pointer;
+    
+}
+.search img{
+    width: 16px;
+    
+}
+.search button:hover{
+    background-color: rgb(202, 199, 194);
+}
+.search button:active{
+    background-color:rgb(75, 71, 63); ;
+}
+.wether h1{
+    font-size:40px;
+    font-weight:bold;
+    margin-top:0px;
+}
+.wether h2{
+    font-size:30px;
+    font-weight:bold;
+    margin-top:-23px;
+   
+
+}
+.wether img{
+    width: 80px;
+    margin-top:15px;
+}
+.details{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.co1{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: left;
+}
+.co1 img{
+    width:50px;
+    margin-right: 10px;
+}
+.co1 p:first-of-type{
+    font-size: 30px;
+    margin-top:30px;
+    font-weight: 200;
+   
+}
+.co1 p:last-of-type{
+    font-size: 18px;
+    margin-top:-30px;
+    font-weight: 200;
+   
+}
+.co2{
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+.co2 img{
+    width:50px;
+    margin-right: 10px;
+}
+.co2 p:first-of-type{
+    font-size: 30px;
+    font-weight: 200;
+    margin-top:30px;
+}
+.co2 p:last-of-type{
+    font-size: 18px;
+    font-weight: 200;
+    margin-top:-30px;
+}
+
+/*.wether{
+    display:none;
+}*/
+
+.invalid{
+    text-align: left;
+    font:15px;
+    display:none;
+}
