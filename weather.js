@@ -13,6 +13,7 @@ async function checkwether(cname){
     else{
       let data= await respons.json();
     console.log(data);
+    document.querySelector(".invalid").style.display="none";
     document.querySelector(".wether").style.display="block";
     document.querySelector(".city").innerHTML=data.name;
     document.querySelector(".temp").innerHTML=Math.floor(data.main.temp) +"°c";
